@@ -5,6 +5,8 @@ import (
     "io/ioutil"
     "encoding/json"
     "time"
+    "log"
+    "os"
     
     "github.com/eclipse/paho.mqtt.golang"
 )
@@ -25,8 +27,23 @@ const (
 )
 
 var (
+    globalTimeLogger *log.Logger //marvyn
     brokers []string = []string{"tcp://127.0.0.1:1883"}
 )
+
+
+//***************************************************************************************
+func init() {
+    file, err := os.OpenFile("logs_siggen.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
+    if err != nil {
+        log.Fatal(err)
+    }
+
+    globalTimeLogger = log.New(file, "globalTime: ", log.Ldate|log.Ltime|log.Lshortfile)
+    
+}
+//****************************Marvyn*****************************************************
+
 
 func mqtt_connect () mqtt.Client {
     // configure options
@@ -67,7 +84,7 @@ func get_time () float64 {
 }
 
 func produce (client mqtt.Client, signal Signal, t0 float64) {
-    for i := range(signal.Samples) {
+   for i := range(signal.Samples) {
         signal.Samples[i].Time *= 1000000000
     }
     
@@ -89,7 +106,9 @@ func produce (client mqtt.Client, signal Signal, t0 float64) {
             
             // publish
             client.Publish(signal.Topic, 1, false, message)
-            fmt.Println(signal.Topic, ":" , tnext , sample.Value )
+            
+            fmt.Println(signal.Topic, ":" , tnext, sample.Value )
+            globalTimeLogger.Println(signal.Topic, ":" , tnext, sample.Value ) //marvyn
         }
         i += 1.0
     }
@@ -98,6 +117,7 @@ func produce (client mqtt.Client, signal Signal, t0 float64) {
 func main () {
     config := read_config(config_filename)
     client := mqtt_connect()
+    
     
     // start up a producer for each topic
     t0 := get_time()

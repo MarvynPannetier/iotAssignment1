@@ -52,7 +52,8 @@ func get_time () float64 {
 func mavg (topic string, channel chan Sample) {
     otopic := "mavg"+topic[6:]
     fmt.Println("Republishing moving average to", otopic)
-    
+    var sent bool
+    var received bool
     
     // initialize window and sum
     window := make([]float64, int(WINDOW_SIZE))
@@ -65,12 +66,12 @@ func mavg (topic string, channel chan Sample) {
     i := 0.0
     for sample := range channel {
         value := sample.Value
-        var received bool = false
-        var sent bool = false 
+        received = false
+        sent = false 
         
         //Marvyn : I chose to put it here because it is the moment we "received" the sample
    	t0=get_time()
-   	receivedTimeLogger.Println(otopic, "Time : ",t0, "value : ",value) //marvyn
+   	receivedTimeLogger.Println(otopic, "Time : ",t0/1000000000, "s value : ",value) //marvyn
         received = true
         // update window and sum
         sum += value - window[int(i)%int(WINDOW_SIZE)]
@@ -81,12 +82,12 @@ func mavg (topic string, channel chan Sample) {
         message, _ := json.Marshal(new_sample)
               
         t2 := get_time()
-        sentTimeLogger.Println(otopic, "Time : ",t2, "value : ", value)
+        sentTimeLogger.Println(otopic, "Time : ",t2/1000000000, "s value : ", value)
   	sent = true
         //Marvyn : t1 is the time between the moment we received the sample and the moment we send the average
         t1 := (t2-t0)
-        if received && sent {
-        differenceTimeLogger.Println(otopic, "Time : ",t1)
+        if received && sent && t1 > 0.0 {
+        differenceTimeLogger.Println(otopic, "Time : ",t1/1000,"us")
         }   
         // publish
         client.Publish(otopic, 1, false, message)

@@ -55,10 +55,12 @@ func publish (topic string, channel chan Sample) {
         message, _ := json.Marshal(sample)
         t1 := get_time()
         client.Publish(topic, 1, false, message)
-        sentTimeLogger.Println(topic,"Time : ",t1,"Value : ",sample.Value)
+        sentTimeLogger.Println(topic,"Time : ",t1/1000000000,"s Value : ",sample.Value)
         //fmt.Println("sent : ",topic,sample.Value) //add by marvyn
         t2:=t1-t0
-        differenceTimeLogger.Println(topic,"Time : ",t2)
+        if t2 > 0.0 {
+        differenceTimeLogger.Println(topic,"Time : ",t2/1000,"us")
+        }
     }
 }
 
@@ -71,13 +73,15 @@ func calc_abs_hum (temp float64, rhum float64) float64 {
 func ahum (channel_temp chan Sample,
            channel_rhum chan Sample,
            channel_ahum chan Sample,
-           topic string) { //add by marvyn
-           t0=get_time()
+           topic_temp string,
+           topic_rhum string) { //add by marvyn
+         
     for {
+      t0=get_time()
         temp_sample := <- channel_temp
-        receivedTempTimeLogger.Println(topic, "Time : ",t0,"value : ",temp_sample.Value)
+        receivedTempTimeLogger.Println(topic_temp, "Time : ",t0/1000000000,"s value : ",temp_sample.Value)
         rhum_sample := <- channel_rhum
-        receivedHumTimeLogger.Println(topic, "Time : ",t0,"value : ",rhum_sample.Value)
+        receivedHumTimeLogger.Println(topic_rhum, "Time : ",t0/1000000000,"s value : ",rhum_sample.Value)
         
         temp := temp_sample.Value
         rhum := rhum_sample.Value
@@ -94,7 +98,7 @@ func dispatch_sample (client mqtt.Client, message mqtt.Message) {
     var channel_temp chan Sample
     var channel_rhum chan Sample
     var channel_ahum chan Sample
-    
+     fmt.Println("received : ",topic) //add by marvyn
     // preprocess topic
     tparts := strings.Split(topic, "/")
     modality := tparts[len(tparts)-1]
@@ -125,16 +129,16 @@ func dispatch_sample (client mqtt.Client, message mqtt.Message) {
         default:
             return
         }
-         fmt.Println("received : ",topic) //add by marvyn
+        
         // define topic names
         topic_temp := "mavg/"+strings.Join(tparts[1:len(tparts)-1], "/")+"/temp"
         topic_rhum := "mavg/"+strings.Join(tparts[1:len(tparts)-1], "/")+"/rhum"
         topic_ahum := "func/"  +strings.Join(tparts[1:len(tparts)-1], "/")+"/ahum"
         
         // start up consumers
-        
-      //  room:=topic[:len(topic)-5] //add by marvyn
-        go ahum(channel_temp, channel_rhum, channel_ahum, topic)//add by marvyn
+         
+        //room:=topic[:len(topic)-5] //add by marvyn
+        go ahum(channel_temp, channel_rhum, channel_ahum, topic_temp, topic_rhum)//add by marvyn
         go publish(topic_ahum, channel_ahum)
         
         // register channels

@@ -29,6 +29,8 @@ const (
 var (
     globalTimeLogger *log.Logger //marvyn
     brokers []string = []string{"tcp://127.0.0.1:1883"}
+    t0 float64 = 0.0
+    t1 float64 = 0.0
 )
 
 
@@ -84,6 +86,9 @@ func get_time () float64 {
 }
 
 func produce (client mqtt.Client, signal Signal, t0 float64) {
+
+	var t2 float64
+
    for i := range(signal.Samples) {
         signal.Samples[i].Time *= 1000000000
     }
@@ -91,8 +96,11 @@ func produce (client mqtt.Client, signal Signal, t0 float64) {
     period := signal.Samples[len(signal.Samples)-1].Time
     var i float64 = 0.0
     fmt.Println("About to produce", signal.Topic)
+
     for {
+    	 
         for _, sample := range(signal.Samples) {
+     
             tnext := t0+i*period+sample.Time
             
             // produce payload
@@ -106,15 +114,20 @@ func produce (client mqtt.Client, signal Signal, t0 float64) {
             
             // publish
             client.Publish(signal.Topic, 1, false, message)
-            
+            t2 = get_time()
             fmt.Println(signal.Topic, ":" , tnext, sample.Value )
-            globalTimeLogger.Println(signal.Topic, ":" , tnext, sample.Value ) //marvyn
+            
+            
+            globalTimeLogger.Println(signal.Topic, "Time : ",(t2-t0)/1000000000,"s Value : ", sample.Value ) //marvyn
+          
+            
         }
         i += 1.0
     }
 }
 
 func main () {
+   
     config := read_config(config_filename)
     client := mqtt_connect()
     

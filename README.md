@@ -17,3 +17,7 @@ use this link for the test harness :
 
 https://github.com/aslakjohansen/simple-java-test-harness.git
 
+link to the report : https://docs.google.com/document/d/1UhqOgxAPsGIccz7RKWE9ALRkPDM8nr2v3YACpNuMKZU/edit?usp=sharing
+
+I started it and i will finish it before wednesday
+

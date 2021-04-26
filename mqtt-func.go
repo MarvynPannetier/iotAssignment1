@@ -52,6 +52,8 @@ func get_time () float64 {
 
 func publish (topic string, channel chan Sample) {
     for sample := range channel {
+        fmt.Println("Sending,", topic)
+        
         message, _ := json.Marshal(sample)
         t1 := get_time()
         client.Publish(topic, 1, false, message)
@@ -98,7 +100,7 @@ func dispatch_sample (client mqtt.Client, message mqtt.Message) {
     var channel_temp chan Sample
     var channel_rhum chan Sample
     var channel_ahum chan Sample
-     fmt.Println("received : ",topic) //add by marvyn
+    fmt.Println("Received,",topic) //add by marvyn
     // preprocess topic
     tparts := strings.Split(topic, "/")
     modality := tparts[len(tparts)-1]

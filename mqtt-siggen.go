@@ -95,7 +95,7 @@ func produce (client mqtt.Client, signal Signal, t0 float64) {
     
     period := signal.Samples[len(signal.Samples)-1].Time
     var i float64 = 0.0
-    fmt.Println("About to produce", signal.Topic)
+    //fmt.Println("About to produce", signal.Topic)
 
     for {
     	 
@@ -115,7 +115,7 @@ func produce (client mqtt.Client, signal Signal, t0 float64) {
             // publish
             client.Publish(signal.Topic, 1, false, message)
             t2 = get_time()
-            fmt.Println(signal.Topic, ":" , tnext, sample.Value )
+            fmt.Println("Sending,", signal.Topic)
             
             
             globalTimeLogger.Println(signal.Topic, "Time : ",(t2-t0)/1000000000,"s Value : ", sample.Value ) //marvyn

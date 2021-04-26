@@ -51,7 +51,7 @@ func get_time () float64 {
 
 func mavg (topic string, channel chan Sample) {
     otopic := "mavg"+topic[6:]
-    fmt.Println("Republishing moving average to", otopic)
+    //fmt.Println("Republishing moving average to", otopic)
     var sent bool
     var received bool
     
@@ -70,7 +70,7 @@ func mavg (topic string, channel chan Sample) {
         sent = false 
         
         //Marvyn : I chose to put it here because it is the moment we "received" the sample
-   	t0=get_time()
+       t0=get_time()
    	receivedTimeLogger.Println(otopic, "Time : ",t0/1000000000, "s value : ",value) //marvyn
         received = true
         // update window and sum
@@ -83,9 +83,11 @@ func mavg (topic string, channel chan Sample) {
               
         t2 := get_time()
         sentTimeLogger.Println(otopic, "Time : ",t2/1000000000, "s value : ", value)
-  	sent = true
+      sent = true
+      
         //Marvyn : t1 is the time between the moment we received the sample and the moment we send the average
         t1 := (t2-t0)
+        fmt.Println("Sending,","mavg"+topic[6:])
         if received && sent && t1 > 0.0 {
         differenceTimeLogger.Println(otopic, "Time : ",t1/1000,"us")
         }   
@@ -96,6 +98,7 @@ func mavg (topic string, channel chan Sample) {
 }
 
 func dispatch_sample (client mqtt.Client, message mqtt.Message) {
+    fmt.Println("Received,", "mavg/"+message.Topic())
     var topic string = message.Topic()
     var sample Sample
     
@@ -121,6 +124,7 @@ func dispatch_sample (client mqtt.Client, message mqtt.Message) {
 }
 
 func mqtt_subscribe () {
+    //fmt.Println("mqtt_subscribe")
     // configure options
     options := mqtt.NewClientOptions()
     for _, broker := range brokers {

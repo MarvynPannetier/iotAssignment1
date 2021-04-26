@@ -4,10 +4,10 @@ import (
     "fmt"
     "encoding/json"
     "sync"
-    "time"
+    //"time"
     "github.com/eclipse/paho.mqtt.golang"
-    "log"
-    "os"
+    //"log"
+    //"os"
 )
 
 type Sample struct {
@@ -22,9 +22,9 @@ var (
     dispatch_mux sync.Mutex
     t0 float64 = 0.0
     client mqtt.Client
-    receivedTimeLogger *log.Logger  //marvyn
-    sentTimeLogger *log.Logger  //marvyn
-    differenceTimeLogger *log.Logger  //marvyn
+    //receivedTimeLogger *log.Logger  //marvyn
+    //sentTimeLogger *log.Logger  //marvyn
+    //differenceTimeLogger *log.Logger  //marvyn
 )
 
 const (
@@ -32,7 +32,7 @@ const (
 )
 
 //***************************************************************************************
-func init() {
+/*func init() {
     file, err := os.OpenFile("logs_mavg.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
     if err != nil {
         log.Fatal(err)
@@ -40,20 +40,20 @@ func init() {
     receivedTimeLogger = log.New(file,"received : ", log.Ldate|log.Ltime|log.Lshortfile)
     sentTimeLogger = log.New(file,"sent : ", log.Ldate|log.Ltime|log.Lshortfile)
     differenceTimeLogger = log.New(file,"difference : ",log.Ldate|log.Ltime|log.Lshortfile)
-}
+}*/
 //****************************Marvyn*****************************************************
 
 
-func get_time () float64 {
+/*func get_time () float64 {
     return float64(time.Now().UnixNano())
-}
+}*/
 
 
 func mavg (topic string, channel chan Sample) {
     otopic := "mavg"+topic[6:]
     //fmt.Println("Republishing moving average to", otopic)
-    var sent bool
-    var received bool
+    //var sent bool
+    //var received bool
     
     // initialize window and sum
     window := make([]float64, int(WINDOW_SIZE))
@@ -66,13 +66,13 @@ func mavg (topic string, channel chan Sample) {
     i := 0.0
     for sample := range channel {
         value := sample.Value
-        received = false
-        sent = false 
+        //received = false
+        //sent = false 
         
         //Marvyn : I chose to put it here because it is the moment we "received" the sample
-       t0=get_time()
-   	receivedTimeLogger.Println(otopic, "Time : ",t0/1000000000, "s value : ",value) //marvyn
-        received = true
+        //t0=get_time()
+   	    //receivedTimeLogger.Println(otopic, "Time : ",t0/1000000000, "s value : ",value) //marvyn
+        //received = true
         // update window and sum
         sum += value - window[int(i)%int(WINDOW_SIZE)]
         window[int(i)%int(WINDOW_SIZE)] = value
@@ -81,16 +81,16 @@ func mavg (topic string, channel chan Sample) {
         var new_sample Sample = Sample{sample.Time, sum/WINDOW_SIZE}
         message, _ := json.Marshal(new_sample)
               
-        t2 := get_time()
-        sentTimeLogger.Println(otopic, "Time : ",t2/1000000000, "s value : ", value)
-      sent = true
+        //t2 := get_time()
+        //sentTimeLogger.Println(otopic, "Time : ",t2/1000000000, "s value : ", value)
+        //sent = true
       
         //Marvyn : t1 is the time between the moment we received the sample and the moment we send the average
-        t1 := (t2-t0)
+        //t1 := (t2-t0)
         fmt.Println("Sending,","mavg"+topic[6:])
-        if received && sent && t1 > 0.0 {
-        differenceTimeLogger.Println(otopic, "Time : ",t1/1000,"us")
-        }   
+        //if received && sent && t1 > 0.0 {
+        //differenceTimeLogger.Println(otopic, "Time : ",t1/1000,"us")
+        //}   
         // publish
         client.Publish(otopic, 1, false, message)
         i++
@@ -98,7 +98,7 @@ func mavg (topic string, channel chan Sample) {
 }
 
 func dispatch_sample (client mqtt.Client, message mqtt.Message) {
-    fmt.Println("Received,", "mavg/"+message.Topic())
+    fmt.Println("Received,", message.Topic())
     var topic string = message.Topic()
     var sample Sample
     

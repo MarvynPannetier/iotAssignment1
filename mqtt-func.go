@@ -6,9 +6,9 @@ import (
     "sync"
     "strings"
     "math"
-    "log"
-    "os"
-    "time"
+    //"log"
+    //"os"
+    //"time"
     "github.com/eclipse/paho.mqtt.golang"
 )
 
@@ -23,17 +23,17 @@ var (
     dispatch map[string]chan Sample = make(map[string]chan Sample)
     dispatch_mux sync.Mutex
     client mqtt.Client
-    t0 float64 = 0.0
-    receivedTempTimeLogger *log.Logger  //marvyn
-    receivedHumTimeLogger *log.Logger  //marvyn
-    sentTimeLogger *log.Logger  //marvyn
-    differenceTimeLogger *log.Logger  //marvyn
+    //t0 float64 = 0.0
+    //receivedTempTimeLogger *log.Logger  //marvyn
+    //receivedHumTimeLogger *log.Logger  //marvyn
+    //sentTimeLogger *log.Logger  //marvyn
+    //differenceTimeLogger *log.Logger  //marvyn
 )
 
 
 
 //***************************************************************************************
-func init() {
+/*func init() {
     file, err := os.OpenFile("logs_func.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
     if err != nil {
         log.Fatal(err)
@@ -42,27 +42,28 @@ func init() {
     receivedHumTimeLogger = log.New(file,"received : ", log.Ldate|log.Ltime|log.Lshortfile)
     sentTimeLogger = log.New(file,"sent : ", log.Ldate|log.Ltime|log.Lshortfile)
     differenceTimeLogger = log.New(file,"difference : ",log.Ldate|log.Ltime|log.Lshortfile)
-}
+}*/
 //****************************Marvyn*****************************************************
 
-func get_time () float64 {
+/*func get_time () float64 {
     return float64(time.Now().UnixNano())
-}
+}*/
 
 
 func publish (topic string, channel chan Sample) {
     for sample := range channel {
-        fmt.Println("Sending,", topic)
+        
         
         message, _ := json.Marshal(sample)
-        t1 := get_time()
+        fmt.Println("Sending,", topic)
+        //t1 := get_time()
         client.Publish(topic, 1, false, message)
-        sentTimeLogger.Println(topic,"Time : ",t1/1000000000,"s Value : ",sample.Value)
+        //sentTimeLogger.Println(topic,"Time : ",t1/1000000000,"s Value : ",sample.Value)
         //fmt.Println("sent : ",topic,sample.Value) //add by marvyn
-        t2:=t1-t0
-        if t2 > 0.0 {
+        //t2:=t1-t0
+        /*if t2 > 0.0 {
         differenceTimeLogger.Println(topic,"Time : ",t2/1000,"us")
-        }
+        }*/
     }
 }
 
@@ -74,16 +75,17 @@ func calc_abs_hum (temp float64, rhum float64) float64 {
 
 func ahum (channel_temp chan Sample,
            channel_rhum chan Sample,
-           channel_ahum chan Sample,
+           channel_ahum chan Sample){
+           /*
            topic_temp string,
-           topic_rhum string) { //add by marvyn
+           topic_rhum string*/ //add by marvyn
          
     for {
-      t0=get_time()
+      //t0=get_time()
         temp_sample := <- channel_temp
-        receivedTempTimeLogger.Println(topic_temp, "Time : ",t0/1000000000,"s value : ",temp_sample.Value)
+        //receivedTempTimeLogger.Println(topic_temp, "Time : ",t0/1000000000,"s value : ",temp_sample.Value)
         rhum_sample := <- channel_rhum
-        receivedHumTimeLogger.Println(topic_rhum, "Time : ",t0/1000000000,"s value : ",rhum_sample.Value)
+        //receivedHumTimeLogger.Println(topic_rhum, "Time : ",t0/1000000000,"s value : ",rhum_sample.Value)
         
         temp := temp_sample.Value
         rhum := rhum_sample.Value
@@ -140,8 +142,9 @@ func dispatch_sample (client mqtt.Client, message mqtt.Message) {
         // start up consumers
          
         //room:=topic[:len(topic)-5] //add by marvyn
-        go ahum(channel_temp, channel_rhum, channel_ahum, topic_temp, topic_rhum)//add by marvyn
         go publish(topic_ahum, channel_ahum)
+        go ahum(channel_temp, channel_rhum, channel_ahum)//add by marvyn
+        
         
         // register channels
         dispatch[topic_temp] = channel_temp

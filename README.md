@@ -21,3 +21,7 @@ link to the report : https://docs.google.com/document/d/1UhqOgxAPsGIccz7RKWE9ALR
 
 I started it and i will finish it before wednesday
 
+The Makefile is for the "client".
+
+For all TestHarnesses line 20 in the Logger.java file should have System.nanoTime().
+The delay is lower than 1ms, and would therefore not show up if using System.currentTimeMillis().

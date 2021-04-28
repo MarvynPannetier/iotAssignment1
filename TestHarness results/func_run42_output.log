@@ -1,337 +1,441 @@
 # timestamp,line
-44291927433818,Received, mavg/room1/temp
-44291928328074,Received, mavg/room1/rhum
-44291928476384,Sending, func/room1/ahum
-44291928505769,Received, mavg/room2/temp
-44291928531061,Received, mavg/room2/rhum
-44291928557275,Sending, func/room2/ahum
-44292926398621,Received, mavg/room1/temp
-44292926697662,Received, mavg/room2/rhum
-44292926737204,Received, mavg/room2/temp
-44292926871601,Sending, func/room2/ahum
-44292926900573,Received, mavg/room1/rhum
-44292926925938,Sending, func/room1/ahum
-44293925447222,Received, mavg/room1/rhum
-44293925547451,Received, mavg/room1/temp
-44293925588795,Sending, func/room1/ahum
-44293925624244,Received, mavg/room2/temp
-44293969413473,Received, mavg/room2/rhum
-44293969511406,Sending, func/room2/ahum
-44294925215776,Received, mavg/room2/temp
-44294925389203,Received, mavg/room2/rhum
-44294925415816,Received, mavg/room1/temp
-44294925441036,Received, mavg/room1/rhum
-44294925466192,Sending, func/room1/ahum
-44294925714474,Sending, func/room2/ahum
-44295925271659,Received, mavg/room1/temp
-44295925454100,Received, mavg/room2/temp
-44295925481879,Received, mavg/room1/rhum
-44295925507190,Received, mavg/room2/rhum
-44295925545740,Sending, func/room2/ahum
-44295925572908,Sending, func/room1/ahum
-44296925338122,Received, mavg/room2/temp
-44296925452588,Received, mavg/room1/temp
-44296925481055,Received, mavg/room1/rhum
-44296925508648,Sending, func/room1/ahum
-44296925544024,Received, mavg/room2/rhum
-44296925589765,Sending, func/room2/ahum
-44297925896857,Received, mavg/room2/temp
-44297926613684,Received, mavg/room1/rhum
-44297926665293,Received, mavg/room2/rhum
-44297926693013,Sending, func/room2/ahum
-44297926720997,Received, mavg/room1/temp
-44297926950129,Sending, func/room1/ahum
-44298925112239,Received, mavg/room1/rhum
-44298925515497,Received, mavg/room2/temp
-44298925625460,Received, mavg/room2/rhum
-44298925820280,Sending, func/room2/ahum
-44298971732671,Received, mavg/room1/temp
-44298971823627,Sending, func/room1/ahum
-44299925801656,Received, mavg/room1/temp
-44299926066856,Received, mavg/room1/rhum
-44299926092409,Sending, func/room1/ahum
-44299926123587,Received, mavg/room2/temp
-44299926138674,Received, mavg/room2/rhum
-44299926166287,Sending, func/room2/ahum
-44300925650377,Received, mavg/room1/temp
-44300925693019,Received, mavg/room2/temp
-44300925705328,Received, mavg/room1/rhum
-44300925717199,Sending, func/room1/ahum
-44300925956136,Received, mavg/room2/rhum
-44300925974154,Sending, func/room2/ahum
-44301925616211,Received, mavg/room1/rhum
-44301925920062,Received, mavg/room2/temp
-44301926259945,Received, mavg/room1/temp
-44301926294258,Sending, func/room1/ahum
-44301926516364,Received, mavg/room2/rhum
-44301926533162,Sending, func/room2/ahum
-44302926604904,Received, mavg/room2/temp
-44302926676070,Received, mavg/room1/rhum
-44302926689245,Received, mavg/room1/temp
-44302926701284,Sending, func/room1/ahum
-44302926713309,Received, mavg/room2/rhum
-44302926725987,Sending, func/room2/ahum
-44303925296460,Received, mavg/room2/rhum
-44303925339198,Received, mavg/room1/temp
-44303925351139,Received, mavg/room1/rhum
-44303925362526,Received, mavg/room2/temp
-44303925373835,Sending, func/room2/ahum
-44303925385759,Sending, func/room1/ahum
-44304926010429,Received, mavg/room2/temp
-44304926052657,Received, mavg/room1/rhum
-44304926063949,Received, mavg/room2/rhum
-44304926074815,Sending, func/room2/ahum
-44304926085653,Received, mavg/room1/temp
-44304926096485,Sending, func/room1/ahum
-44305927889289,Received, mavg/room1/temp
-44305927950008,Received, mavg/room1/rhum
-44305927961729,Sending, func/room1/ahum
-44305927993634,Received, mavg/room2/rhum
-44305928192988,Received, mavg/room2/temp
-44305928207879,Sending, func/room2/ahum
-44306924834781,Received, mavg/room2/temp
-44306924900389,Received, mavg/room2/rhum
-44306924930823,Sending, func/room2/ahum
-44306924958212,Received, mavg/room1/temp
-44306968954841,Received, mavg/room1/rhum
-44306969064458,Sending, func/room1/ahum
-44307925666834,Received, mavg/room1/rhum
-44307925719707,Received, mavg/room2/temp
-44307925740869,Received, mavg/room2/rhum
-44307925755771,Sending, func/room2/ahum
-44307925769436,Received, mavg/room1/temp
-44307925788316,Sending, func/room1/ahum
-44308925586354,Received, mavg/room2/rhum
-44308925667134,Received, mavg/room1/temp
-44308925682549,Received, mavg/room1/rhum
-44308925694477,Sending, func/room1/ahum
-44308925985419,Received, mavg/room2/temp
-44308926043220,Sending, func/room2/ahum
-44309925598792,Received, mavg/room2/rhum
-44309925660330,Received, mavg/room2/temp
-44309925686992,Sending, func/room2/ahum
-44309925706221,Received, mavg/room1/rhum
-44309925727847,Received, mavg/room1/temp
-44309925747524,Sending, func/room1/ahum
-44310926182179,Received, mavg/room2/rhum
-44310926251426,Received, mavg/room1/temp
-44310926667074,Received, mavg/room2/temp
-44310926683596,Received, mavg/room1/rhum
-44310926694808,Sending, func/room1/ahum
-44310926706691,Sending, func/room2/ahum
-44311925348288,Received, mavg/room2/temp
-44311925405184,Received, mavg/room2/rhum
-44311925440949,Received, mavg/room1/temp
-44311925458248,Sending, func/room2/ahum
-44311925473924,Received, mavg/room1/rhum
-44311925504559,Sending, func/room1/ahum
-44312925443150,Received, mavg/room2/temp
-44312932520559,Received, mavg/room1/rhum
-44312932617889,Received, mavg/room2/rhum
-44312932636822,Sending, func/room2/ahum
-44312932649592,Received, mavg/room1/temp
-44312932673169,Sending, func/room1/ahum
-44313934073758,Received, mavg/room2/temp
-44313934116115,Received, mavg/room1/rhum
-44313934128804,Received, mavg/room2/rhum
-44313934138618,Sending, func/room2/ahum
-44313934148098,Received, mavg/room1/temp
-44313934165959,Sending, func/room1/ahum
-44314924953839,Received, mavg/room2/temp
-44314925043781,Received, mavg/room1/rhum
-44314925050867,Received, mavg/room1/temp
-44314925431120,Sending, func/room1/ahum
-44314925733858,Received, mavg/room2/rhum
-44314925740330,Sending, func/room2/ahum
-44315925468275,Received, mavg/room2/rhum
-44315925477119,Received, mavg/room2/temp
-44315925481177,Sending, func/room2/ahum
-44315925485194,Received, mavg/room1/rhum
-44315925499125,Received, mavg/room1/temp
-44315925675372,Sending, func/room1/ahum
-44316925451857,Received, mavg/room2/temp
-44316925478050,Received, mavg/room2/rhum
-44316925515066,Sending, func/room2/ahum
-44316925525905,Received, mavg/room1/temp
-44316925546823,Received, mavg/room1/rhum
-44316925552711,Sending, func/room1/ahum
-44317927298222,Received, mavg/room1/rhum
-44317927320443,Received, mavg/room1/temp
-44317927326214,Sending, func/room1/ahum
-44317927519226,Received, mavg/room2/rhum
-44317927525044,Received, mavg/room2/temp
-44317927530841,Sending, func/room2/ahum
-44318925743892,Received, mavg/room2/temp
-44318925787592,Received, mavg/room2/rhum
-44318925794366,Sending, func/room2/ahum
-44318926203319,Received, mavg/room1/rhum
-44318926246606,Received, mavg/room1/temp
-44318926257302,Sending, func/room1/ahum
-44319925759828,Received, mavg/room1/rhum
-44319926119081,Received, mavg/room2/rhum
-44319926150339,Received, mavg/room2/temp
-44319926164795,Sending, func/room2/ahum
-44319926176740,Received, mavg/room1/temp
-44319926195300,Sending, func/room1/ahum
-44320925434737,Received, mavg/room1/temp
-44320925450972,Received, mavg/room2/rhum
-44320925502831,Received, mavg/room1/rhum
-44320925508237,Sending, func/room1/ahum
-44320925548340,Received, mavg/room2/temp
-44320925553524,Sending, func/room2/ahum
-44321925584589,Received, mavg/room1/rhum
-44321925652874,Received, mavg/room2/rhum
-44321925659664,Received, mavg/room1/temp
-44321925677697,Sending, func/room1/ahum
-44321926000374,Received, mavg/room2/temp
-44321926007530,Sending, func/room2/ahum
-44322925790326,Received, mavg/room2/temp
-44322925814748,Received, mavg/room1/temp
-44322925845747,Received, mavg/room1/rhum
-44322925851348,Sending, func/room1/ahum
-44322925856532,Received, mavg/room2/rhum
-44322925861620,Sending, func/room2/ahum
-44323927123134,Received, mavg/room2/rhum
-44323927146941,Received, mavg/room2/temp
-44323927150861,Sending, func/room2/ahum
-44323927336510,Received, mavg/room1/rhum
-44323927342942,Received, mavg/room1/temp
-44323927436586,Sending, func/room1/ahum
-44324924930604,Received, mavg/room1/temp
-44324925220119,Received, mavg/room1/rhum
-44324925242858,Received, mavg/room2/temp
-44324925248783,Sending, func/room1/ahum
-44324925465216,Received, mavg/room2/rhum
-44324925472452,Sending, func/room2/ahum
-44325924729310,Received, mavg/room2/rhum
-44325925317500,Received, mavg/room2/temp
-44325925325922,Received, mavg/room1/rhum
-44325925330333,Sending, func/room2/ahum
-44325925334502,Received, mavg/room1/temp
-44325925340422,Sending, func/room1/ahum
-44326924846174,Received, mavg/room1/rhum
-44326924880282,Received, mavg/room2/rhum
-44326925564331,Received, mavg/room2/temp
-44326925570274,Sending, func/room2/ahum
-44326925573568,Received, mavg/room1/temp
-44326925578690,Sending, func/room1/ahum
-44327925515979,Received, mavg/room2/rhum
-44327925836021,Received, mavg/room2/temp
-44327926061401,Sending, func/room2/ahum
-44327926067910,Received, mavg/room1/rhum
-44327926333137,Received, mavg/room1/temp
-44327926537636,Sending, func/room1/ahum
-44328926258817,Received, mavg/room2/rhum
-44328926279089,Received, mavg/room1/rhum
-44328926964432,Received, mavg/room1/temp
-44328926973801,Sending, func/room1/ahum
-44328926977696,Received, mavg/room2/temp
-44328926984117,Sending, func/room2/ahum
-44329926078837,Received, mavg/room2/temp
-44329926099535,Received, mavg/room2/rhum
-44329926102964,Sending, func/room2/ahum
-44329926106542,Received, mavg/room1/rhum
-44329972723129,Received, mavg/room1/temp
-44329972751581,Sending, func/room1/ahum
-44330928653474,Received, mavg/room2/temp
-44330928671929,Received, mavg/room1/rhum
-44330928675452,Received, mavg/room2/rhum
-44330928678689,Sending, func/room2/ahum
-44330928681855,Received, mavg/room1/temp
-44330928694373,Sending, func/room1/ahum
-44331925313151,Received, mavg/room2/rhum
-44331925328303,Received, mavg/room1/temp
-44331925330937,Received, mavg/room2/temp
-44331925333499,Sending, func/room2/ahum
-44331925336123,Received, mavg/room1/rhum
-44331925338651,Sending, func/room1/ahum
-44332924723524,Received, mavg/room1/temp
-44332925582475,Received, mavg/room2/temp
-44332925625421,Received, mavg/room1/rhum
-44332925640783,Sending, func/room1/ahum
-44332925698089,Received, mavg/room2/rhum
-44332925992385,Sending, func/room2/ahum
-44333925110921,Received, mavg/room1/rhum
-44333925130319,Received, mavg/room2/rhum
-44333925620676,Received, mavg/room2/temp
-44333925642422,Sending, func/room2/ahum
-44333925646696,Received, mavg/room1/temp
-44333925650476,Sending, func/room1/ahum
-44334925527017,Received, mavg/room1/rhum
-44334925549634,Received, mavg/room2/temp
-44334925553476,Received, mavg/room2/rhum
-44334925557222,Received, mavg/room1/temp
-44334925570997,Sending, func/room1/ahum
-44334925574755,Sending, func/room2/ahum
-44335924966856,Received, mavg/room2/temp
-44335924980552,Received, mavg/room1/rhum
-44335924988655,Received, mavg/room1/temp
-44335924991512,Sending, func/room1/ahum
-44335925269789,Received, mavg/room2/rhum
-44335925278207,Sending, func/room2/ahum
-44336924989483,Received, mavg/room1/temp
-44336925566021,Received, mavg/room1/rhum
-44336925571701,Sending, func/room1/ahum
-44336925575222,Received, mavg/room2/rhum
-44336925578447,Received, mavg/room2/temp
-44336925788799,Sending, func/room2/ahum
-44337926976948,Received, mavg/room1/temp
-44337927013147,Received, mavg/room2/temp
-44337927017963,Received, mavg/room1/rhum
-44337927022238,Sending, func/room1/ahum
-44337927025829,Received, mavg/room2/rhum
-44337927036204,Sending, func/room2/ahum
-44338925081029,Received, mavg/room2/temp
-44338925108195,Received, mavg/room1/rhum
-44338925297581,Received, mavg/room1/temp
-44338925389489,Sending, func/room1/ahum
-44338925782147,Received, mavg/room2/rhum
-44338925928312,Sending, func/room2/ahum
-44339925308354,Received, mavg/room2/temp
-44339925796561,Received, mavg/room1/temp
-44339925800721,Received, mavg/room2/rhum
-44339925803364,Sending, func/room2/ahum
-44339925820493,Received, mavg/room1/rhum
-44339925823668,Sending, func/room1/ahum
-44340925046971,Received, mavg/room2/temp
-44340925059455,Received, mavg/room1/temp
-44340925062093,Received, mavg/room2/rhum
-44340925064597,Sending, func/room2/ahum
-44340925377855,Received, mavg/room1/rhum
-44340925383479,Sending, func/room1/ahum
-44341925628112,Received, mavg/room1/rhum
-44341925641151,Received, mavg/room2/rhum
-44341925643988,Received, mavg/room2/temp
-44341925655168,Sending, func/room2/ahum
-44341925850214,Received, mavg/room1/temp
-44341925853986,Sending, func/room1/ahum
-44342929678567,Received, mavg/room2/temp
-44342929695559,Received, mavg/room1/temp
-44342929699065,Received, mavg/room1/rhum
-44342930087414,Sending, func/room1/ahum
-44342930092420,Received, mavg/room2/rhum
-44342930095730,Sending, func/room2/ahum
-44343925698339,Received, mavg/room2/temp
-44343925717676,Received, mavg/room1/temp
-44343925733414,Received, mavg/room1/rhum
-44343925736184,Sending, func/room1/ahum
-44343925938008,Received, mavg/room2/rhum
-44343925962938,Sending, func/room2/ahum
-44344925107597,Received, mavg/room1/rhum
-44344925121062,Received, mavg/room2/temp
-44344925134160,Received, mavg/room1/temp
-44344925136775,Sending, func/room1/ahum
-44344925369093,Received, mavg/room2/rhum
-44344925385614,Sending, func/room2/ahum
-44345925262037,Received, mavg/room1/rhum
-44345925273892,Received, mavg/room2/temp
-44345925409012,Received, mavg/room2/rhum
-44345925420518,Sending, func/room2/ahum
-44345925710229,Received, mavg/room1/temp
-44345925849862,Sending, func/room1/ahum
-44346926547139,Received, mavg/room2/temp
-44346926559057,Received, mavg/room1/rhum
-44346926561670,Received, mavg/room2/rhum
-44346926564138,Sending, func/room2/ahum
-44346926566635,Received, mavg/room1/temp
-44346926569077,Sending, func/room1/ahum
+46664541894189,Received, mavg/room1/rhum
+46664542888939,Received, mavg/room2/rhum
+46664542930887,Received, mavg/room1/temp
+46664542961662,Sending, func/room1/ahum , {1.6196019593842975e+18 1.2635743748565544}
+46664543000239,Received, mavg/room2/temp
+46664543053780,Sending, func/room2/ahum , {1.6196019593842975e+18 1.5356947351026804}
+46665542035052,Received, mavg/room2/temp
+46665542119361,Received, mavg/room2/rhum
+46665542150744,Received, mavg/room1/temp
+46665542181242,Sending, func/room2/ahum , {1.6196019603842975e+18 4.576003930258816}
+46665542283393,Received, mavg/room1/rhum
+46665542315674,Sending, func/room1/ahum , {1.6196019603842975e+18 4.103795088696139}
+46666543989792,Received, mavg/room2/rhum
+46666544085359,Received, mavg/room1/rhum
+46666544163628,Received, mavg/room1/temp
+46666544194505,Sending, func/room1/ahum , {1.6196019613842975e+18 9.986416786305002}
+46666544242772,Received, mavg/room2/temp
+46666544280832,Sending, func/room2/ahum , {1.6196019613842975e+18 10.061607274732868}
+46667542648182,Received, mavg/room1/temp
+46667542730132,Received, mavg/room2/rhum
+46667542761252,Received, mavg/room2/temp
+46667542791169,Sending, func/room2/ahum , {1.6196019623842975e+18 10.010974839059172}
+46667542837346,Received, mavg/room1/rhum
+46667542867692,Sending, func/room1/ahum , {1.6196019623842975e+18 11.23380038494252}
+46668543897766,Received, mavg/room2/rhum
+46668544008609,Received, mavg/room1/rhum
+46668544068147,Received, mavg/room1/temp
+46668544135080,Sending, func/room1/ahum , {1.6196019633842975e+18 12.940685100100492}
+46668544508976,Received, mavg/room2/temp
+46668544568987,Sending, func/room2/ahum , {1.6196019633842975e+18 10.387093530762206}
+46669542175062,Received, mavg/room1/rhum
+46669542250904,Received, mavg/room2/rhum
+46669542310542,Received, mavg/room2/temp
+46669542338191,Sending, func/room2/ahum , {1.6196019643842975e+18 11.48279323205321}
+46669585068551,Received, mavg/room1/temp
+46669585186332,Sending, func/room1/ahum , {1.6196019643842975e+18 14.206148368755578}
+46670543540470,Received, mavg/room2/rhum
+46670543645224,Received, mavg/room1/rhum
+46670543682591,Received, mavg/room2/temp
+46670543726016,Sending, func/room2/ahum , {1.6196019653842975e+18 12.561232527223945}
+46670543782889,Received, mavg/room1/temp
+46670543821978,Sending, func/room1/ahum , {1.6196019653842975e+18 15.905765362394636}
+46671541705080,Received, mavg/room2/temp
+46671541778916,Received, mavg/room1/temp
+46671541806167,Received, mavg/room2/rhum
+46671541832626,Sending, func/room2/ahum , {1.6196019663842975e+18 14.211703862415462}
+46671541867365,Received, mavg/room1/rhum
+46671541902958,Sending, func/room1/ahum , {1.6196019663842975e+18 16.948247537868756}
+46672544625871,Received, mavg/room2/temp
+46672544691850,Received, mavg/room1/rhum
+46672544718030,Received, mavg/room2/rhum
+46672544743875,Sending, func/room2/ahum , {1.6196019673842975e+18 15.654037212546436}
+46672544787601,Received, mavg/room1/temp
+46672544814243,Sending, func/room1/ahum , {1.6196019673842975e+18 18.469251231752896}
+46673542874144,Received, mavg/room1/rhum
+46673542963509,Received, mavg/room2/temp
+46673542988843,Received, mavg/room2/rhum
+46673543029165,Sending, func/room2/ahum , {1.6196019683842975e+18 17.301704318557995}
+46673543094236,Received, mavg/room1/temp
+46673543151252,Sending, func/room1/ahum , {1.6196019683842975e+18 18.968146901905396}
+46674549724401,Received, mavg/room1/rhum
+46674549783526,Received, mavg/room2/temp
+46674549799307,Received, mavg/room1/temp
+46674549847130,Sending, func/room1/ahum , {1.6196019693842975e+18 16.967950698692455}
+46674549866494,Received, mavg/room2/rhum
+46674549887449,Sending, func/room2/ahum , {1.6196019693842975e+18 17.897609246689022}
+46675542033347,Received, mavg/room1/temp
+46675542080113,Received, mavg/room1/rhum
+46675542098202,Received, mavg/room2/temp
+46675542111360,Sending, func/room1/ahum , {1.6196019703842975e+18 13.077067995062473}
+46675542128321,Received, mavg/room2/rhum
+46675542141486,Sending, func/room2/ahum , {1.6196019703842975e+18 16.95636181537598}
+46676541804074,Received, mavg/room2/rhum
+46676541892494,Received, mavg/room2/temp
+46676541918394,Sending, func/room2/ahum , {1.6196019713842975e+18 14.158298155858915}
+46676541937983,Received, mavg/room1/rhum
+46676541962371,Received, mavg/room1/temp
+46676541979804,Sending, func/room1/ahum , {1.6196019713842975e+18 10.042537444056864}
+46677542710634,Received, mavg/room1/temp
+46677543274075,Received, mavg/room2/rhum
+46677543307292,Received, mavg/room1/rhum
+46677543325055,Sending, func/room1/ahum , {1.6196019723842975e+18 9.085881279571574}
+46677543354966,Received, mavg/room2/temp
+46677543564808,Sending, func/room2/ahum , {1.6196019723842975e+18 11.677987275118783}
+46678543797079,Received, mavg/room1/rhum
+46678543871837,Received, mavg/room1/temp
+46678543894975,Sending, func/room1/ahum , {1.6196019733842975e+18 9.986416786305}
+46678543908577,Received, mavg/room2/temp
+46678543922000,Received, mavg/room2/rhum
+46678543942615,Sending, func/room2/ahum , {1.6196019733842975e+18 10.061607274732864}
+46679541787291,Received, mavg/room1/temp
+46679542336203,Received, mavg/room1/rhum
+46679542355786,Sending, func/room1/ahum , {1.6196019743842975e+18 11.233800384942516}
+46679542383397,Received, mavg/room2/temp
+46679543584331,Received, mavg/room2/rhum
+46679543671151,Sending, func/room2/ahum , {1.6196019743842975e+18 10.010974839059168}
+46680542182251,Received, mavg/room1/temp
+46680542291333,Received, mavg/room1/rhum
+46680542305688,Received, mavg/room2/temp
+46680542345050,Sending, func/room1/ahum , {1.6196019753842975e+18 12.940685100100486}
+46680542555089,Received, mavg/room2/rhum
+46680542572095,Sending, func/room2/ahum , {1.6196019753842975e+18 10.387093530762204}
+46681542172493,Received, mavg/room1/temp
+46681542226378,Received, mavg/room1/rhum
+46681542248135,Sending, func/room1/ahum , {1.6196019763842975e+18 14.206148368755578}
+46681542530018,Received, mavg/room2/rhum
+46681542617198,Received, mavg/room2/temp
+46681542641763,Sending, func/room2/ahum , {1.6196019763842975e+18 11.482793232053208}
+46682541735691,Received, mavg/room2/temp
+46682541805351,Received, mavg/room1/rhum
+46682541828925,Received, mavg/room1/temp
+46682541854848,Sending, func/room1/ahum , {1.6196019773842975e+18 15.905765362394632}
+46682542595096,Received, mavg/room2/rhum
+46682542754845,Sending, func/room2/ahum , {1.6196019773842975e+18 12.561232527223945}
+46683543207892,Received, mavg/room1/rhum
+46683543282625,Received, mavg/room2/temp
+46683597500225,Received, mavg/room2/rhum
+46683597596855,Sending, func/room2/ahum , {1.6196019783842975e+18 14.211703862415462}
+46683598009141,Received, mavg/room1/temp
+46683598043617,Sending, func/room1/ahum , {1.6196019783842975e+18 16.948247537868756}
+46684543332033,Received, mavg/room2/rhum
+46684543376052,Received, mavg/room2/temp
+46684543388053,Sending, func/room2/ahum , {1.6196019793842975e+18 15.654037212546436}
+46684543400061,Received, mavg/room1/rhum
+46684543621839,Received, mavg/room1/temp
+46684543652384,Sending, func/room1/ahum , {1.6196019793842975e+18 18.469251231752896}
+46685541663334,Received, mavg/room1/temp
+46685541995835,Received, mavg/room1/rhum
+46685542024332,Received, mavg/room2/rhum
+46685542054299,Sending, func/room1/ahum , {1.6196019803842975e+18 18.968146901905396}
+46685542512941,Received, mavg/room2/temp
+46685542528787,Sending, func/room2/ahum , {1.6196019803842975e+18 17.301704318557995}
+46686541982872,Received, mavg/room2/temp
+46686542094123,Received, mavg/room1/rhum
+46686542131779,Received, mavg/room2/rhum
+46686542146951,Received, mavg/room1/temp
+46686542161539,Sending, func/room1/ahum , {1.6196019813842975e+18 16.967950698692455}
+46686542192855,Sending, func/room2/ahum , {1.6196019813842975e+18 17.897609246689022}
+46687541566881,Received, mavg/room1/rhum
+46687541650112,Received, mavg/room2/rhum
+46687541676382,Received, mavg/room2/temp
+46687541814780,Sending, func/room2/ahum , {1.6196019823842975e+18 16.95636181537598}
+46687541846004,Received, mavg/room1/temp
+46687541894578,Sending, func/room1/ahum , {1.6196019823842975e+18 13.077067995062473}
+46688542720463,Received, mavg/room1/rhum
+46688542767482,Received, mavg/room1/temp
+46688542778507,Sending, func/room1/ahum , {1.6196019833842975e+18 10.042537444056864}
+46688542899711,Received, mavg/room2/temp
+46688542944061,Received, mavg/room2/rhum
+46688542956071,Sending, func/room2/ahum , {1.6196019833842975e+18 14.158298155858915}
+46689541745372,Received, mavg/room2/rhum
+46689542125114,Received, mavg/room1/temp
+46689542220469,Received, mavg/room1/rhum
+46689542233845,Received, mavg/room2/temp
+46689542265460,Sending, func/room2/ahum , {1.6196019843842975e+18 11.677987275118783}
+46689542445985,Sending, func/room1/ahum , {1.6196019843842975e+18 9.085881279571574}
+46690541865502,Received, mavg/room1/rhum
+46690541886475,Received, mavg/room2/rhum
+46690542018836,Received, mavg/room1/temp
+46690542025020,Received, mavg/room2/temp
+46690542028676,Sending, func/room2/ahum , {1.6196019853842975e+18 10.061607274732864}
+46690542043116,Sending, func/room1/ahum , {1.6196019853842975e+18 9.986416786305}
+46691542318789,Received, mavg/room1/rhum
+46691542440770,Received, mavg/room2/rhum
+46691542533039,Received, mavg/room1/temp
+46691542566120,Sending, func/room1/ahum , {1.6196019863842975e+18 11.233800384942516}
+46691542676594,Received, mavg/room2/temp
+46691542682128,Sending, func/room2/ahum , {1.6196019863842975e+18 10.010974839059168}
+46692542054342,Received, mavg/room2/temp
+46692542091395,Received, mavg/room1/temp
+46692542095023,Received, mavg/room2/rhum
+46692542098426,Sending, func/room2/ahum , {1.6196019873842975e+18 10.387093530762204}
+46692542108365,Received, mavg/room1/rhum
+46692542112009,Sending, func/room1/ahum , {1.6196019873842975e+18 12.940685100100486}
+46693541758647,Received, mavg/room1/rhum
+46693541775859,Received, mavg/room1/temp
+46693541779384,Sending, func/room1/ahum , {1.6196019883842975e+18 14.206148368755578}
+46693541783438,Received, mavg/room2/rhum
+46693542153075,Received, mavg/room2/temp
+46693542159744,Sending, func/room2/ahum , {1.6196019883842975e+18 11.482793232053208}
+46694541827737,Received, mavg/room2/rhum
+46694541853827,Received, mavg/room1/temp
+46694542218305,Received, mavg/room1/rhum
+46694542225199,Sending, func/room1/ahum , {1.6196019893842975e+18 15.905765362394632}
+46694542229269,Received, mavg/room2/temp
+46694542534871,Sending, func/room2/ahum , {1.6196019893842975e+18 12.561232527223945}
+46695541886881,Received, mavg/room2/temp
+46695541905379,Received, mavg/room1/temp
+46695542100452,Received, mavg/room2/rhum
+46695542105716,Received, mavg/room1/rhum
+46695542174001,Sending, func/room1/ahum , {1.6196019903842975e+18 16.948247537868756}
+46695542180101,Sending, func/room2/ahum , {1.6196019903842975e+18 14.211703862415462}
+46696542344176,Received, mavg/room1/temp
+46696543093076,Received, mavg/room1/rhum
+46696543103088,Sending, func/room1/ahum , {1.6196019913842975e+18 18.469251231752896}
+46696543558827,Received, mavg/room2/rhum
+46696543754863,Received, mavg/room2/temp
+46696543917620,Sending, func/room2/ahum , {1.6196019913842975e+18 15.654037212546436}
+46697541747830,Received, mavg/room2/rhum
+46697541766592,Received, mavg/room2/temp
+46697541770268,Sending, func/room2/ahum , {1.6196019923842975e+18 17.301704318557995}
+46697541868003,Received, mavg/room1/rhum
+46697541883822,Received, mavg/room1/temp
+46697541927386,Sending, func/room1/ahum , {1.6196019923842975e+18 18.968146901905396}
+46698541473874,Received, mavg/room1/temp
+46698542095853,Received, mavg/room2/temp
+46698542133242,Received, mavg/room1/rhum
+46698542148204,Sending, func/room1/ahum , {1.6196019933842975e+18 16.967950698692455}
+46698542548271,Received, mavg/room2/rhum
+46698542553952,Sending, func/room2/ahum , {1.6196019933842975e+18 17.897609246689022}
+46699541733942,Received, mavg/room1/rhum
+46699541756998,Received, mavg/room1/temp
+46699541782957,Sending, func/room1/ahum , {1.6196019943842975e+18 13.077067995062473}
+46699543362534,Received, mavg/room2/rhum
+46699543389561,Received, mavg/room2/temp
+46699543393062,Sending, func/room2/ahum , {1.6196019943842975e+18 16.95636181537598}
+46700541481716,Received, mavg/room1/rhum
+46700541506361,Received, mavg/room2/rhum
+46700541511240,Received, mavg/room1/temp
+46700541515500,Sending, func/room1/ahum , {1.6196019953842975e+18 10.042537444056864}
+46700541912390,Received, mavg/room2/temp
+46700542179094,Sending, func/room2/ahum , {1.6196019953842975e+18 14.158298155858915}
+46701542074027,Received, mavg/room2/temp
+46701542130251,Received, mavg/room1/rhum
+46701542134885,Received, mavg/room1/temp
+46701542138217,Sending, func/room1/ahum , {1.6196019963842975e+18 9.085881279571574}
+46701542154491,Received, mavg/room2/rhum
+46701542157995,Sending, func/room2/ahum , {1.6196019963842975e+18 11.677987275118783}
+46702544612602,Received, mavg/room1/rhum
+46702544633714,Received, mavg/room1/temp
+46702544647224,Sending, func/room1/ahum , {1.6196019973842975e+18 9.986416786305}
+46702544695671,Received, mavg/room2/rhum
+46702544716850,Received, mavg/room2/temp
+46702544721854,Sending, func/room2/ahum , {1.6196019973842975e+18 10.061607274732864}
+46703541336355,Received, mavg/room2/temp
+46703541350467,Received, mavg/room2/rhum
+46703541362125,Sending, func/room2/ahum , {1.6196019983842975e+18 10.010974839059168}
+46703541372784,Received, mavg/room1/rhum
+46703541543515,Received, mavg/room1/temp
+46703541547883,Sending, func/room1/ahum , {1.6196019983842975e+18 11.233800384942516}
+46704541484129,Received, mavg/room1/rhum
+46704541498061,Received, mavg/room2/rhum
+46704541500640,Received, mavg/room1/temp
+46704541503297,Sending, func/room1/ahum , {1.6196019993842975e+18 12.940685100100486}
+46704541646118,Received, mavg/room2/temp
+46704541668268,Sending, func/room2/ahum , {1.6196019993842975e+18 10.387093530762204}
+46705542901874,Received, mavg/room1/rhum
+46705542929889,Received, mavg/room1/temp
+46705542933699,Sending, func/room1/ahum , {1.6196020003842975e+18 14.206148368755578}
+46705542949451,Received, mavg/room2/rhum
+46705543048820,Received, mavg/room2/temp
+46705543054814,Sending, func/room2/ahum , {1.6196020003842975e+18 11.482793232053208}
+46706541709905,Received, mavg/room1/rhum
+46706542067634,Received, mavg/room2/temp
+46706542206813,Received, mavg/room1/temp
+46706542213379,Sending, func/room1/ahum , {1.6196020013842975e+18 15.905765362394632}
+46706542216702,Received, mavg/room2/rhum
+46706542219311,Sending, func/room2/ahum , {1.6196020013842975e+18 12.561232527223945}
+46707541885714,Received, mavg/room1/temp
+46707541906936,Received, mavg/room2/rhum
+46707541910512,Received, mavg/room2/temp
+46707541914068,Sending, func/room2/ahum , {1.6196020023842975e+18 14.211703862415462}
+46707541945872,Received, mavg/room1/rhum
+46707542029329,Sending, func/room1/ahum , {1.6196020023842975e+18 16.948247537868756}
+46708541891368,Received, mavg/room1/rhum
+46708542170684,Received, mavg/room1/temp
+46708542177230,Received, mavg/room2/rhum
+46708542180650,Received, mavg/room2/temp
+46708542184261,Sending, func/room1/ahum , {1.6196020033842975e+18 18.469251231752896}
+46708542193142,Sending, func/room2/ahum , {1.6196020033842975e+18 15.654037212546436}
+46709542041034,Received, mavg/room1/rhum
+46709542423633,Received, mavg/room1/temp
+46709542428863,Received, mavg/room2/temp
+46709542515014,Sending, func/room1/ahum , {1.6196020043842975e+18 18.968146901905396}
+46709542737485,Received, mavg/room2/rhum
+46709542813106,Sending, func/room2/ahum , {1.6196020043842975e+18 17.301704318557995}
+46710542339661,Received, mavg/room2/temp
+46710542357055,Received, mavg/room1/temp
+46710542360500,Received, mavg/room1/rhum
+46710542692674,Sending, func/room1/ahum , {1.6196020053842975e+18 16.967950698692455}
+46710542699170,Received, mavg/room2/rhum
+46710542712051,Sending, func/room2/ahum , {1.6196020053842975e+18 17.897609246689022}
+46711541795266,Received, mavg/room2/rhum
+46711542000729,Received, mavg/room1/temp
+46711542250973,Received, mavg/room2/temp
+46711542255978,Sending, func/room2/ahum , {1.6196020063842975e+18 16.95636181537598}
+46711585616015,Received, mavg/room1/rhum
+46711585751507,Sending, func/room1/ahum , {1.6196020063842975e+18 13.077067995062473}
+46712544439846,Received, mavg/room1/temp
+46712544457418,Received, mavg/room1/rhum
+46712544461114,Sending, func/room1/ahum , {1.6196020073842975e+18 10.042537444056864}
+46712544465455,Received, mavg/room2/rhum
+46712544643161,Received, mavg/room2/temp
+46712544647397,Sending, func/room2/ahum , {1.6196020073842975e+18 14.158298155858915}
+46713542015664,Received, mavg/room2/temp
+46713543885844,Received, mavg/room1/temp
+46713543905021,Received, mavg/room1/rhum
+46713543909161,Sending, func/room1/ahum , {1.6196020083842975e+18 9.085881279571574}
+46713585142692,Received, mavg/room2/rhum
+46713585265030,Sending, func/room2/ahum , {1.6196020083842975e+18 11.677987275118783}
+46714541595269,Received, mavg/room2/temp
+46714542205582,Received, mavg/room2/rhum
+46714542279059,Sending, func/room2/ahum , {1.6196020093842975e+18 10.061607274732864}
+46714542285145,Received, mavg/room1/rhum
+46714542718833,Received, mavg/room1/temp
+46714542770352,Sending, func/room1/ahum , {1.6196020093842975e+18 9.986416786305}
+46715541559157,Received, mavg/room1/temp
+46715543122893,Received, mavg/room2/rhum
+46715589705959,Received, mavg/room1/rhum
+46715589833892,Sending, func/room1/ahum , {1.6196020103842975e+18 11.233800384942516}
+46715589879480,Received, mavg/room2/temp
+46715589988012,Sending, func/room2/ahum , {1.6196020103842975e+18 10.010974839059168}
+46716542040821,Received, mavg/room1/rhum
+46716542181210,Received, mavg/room2/rhum
+46716542186691,Received, mavg/room1/temp
+46716542247503,Sending, func/room1/ahum , {1.6196020113842975e+18 12.940685100100486}
+46716542423725,Received, mavg/room2/temp
+46716542438800,Sending, func/room2/ahum , {1.6196020113842975e+18 10.387093530762204}
+46717541902034,Received, mavg/room2/temp
+46717541915122,Received, mavg/room2/rhum
+46717541917822,Sending, func/room2/ahum , {1.6196020123842975e+18 11.482793232053208}
+46717541921063,Received, mavg/room1/temp
+46717541929167,Received, mavg/room1/rhum
+46717541932002,Sending, func/room1/ahum , {1.6196020123842975e+18 14.206148368755578}
+46718542476431,Received, mavg/room1/temp
+46718542679242,Received, mavg/room2/rhum
+46718542686426,Received, mavg/room2/temp
+46718542699839,Sending, func/room2/ahum , {1.6196020133842975e+18 12.561232527223945}
+46718542811957,Received, mavg/room1/rhum
+46718542818590,Sending, func/room1/ahum , {1.6196020133842975e+18 15.905765362394632}
+46719546655304,Received, mavg/room1/temp
+46719547036634,Received, mavg/room2/rhum
+46719547454286,Received, mavg/room1/rhum
+46719547579248,Sending, func/room1/ahum , {1.6196020143842975e+18 16.948247537868756}
+46719547923304,Received, mavg/room2/temp
+46719548008460,Sending, func/room2/ahum , {1.6196020143842975e+18 14.211703862415462}
+46720542105384,Received, mavg/room1/rhum
+46720542122895,Received, mavg/room1/temp
+46720542126222,Sending, func/room1/ahum , {1.6196020153842975e+18 18.469251231752896}
+46720542130087,Received, mavg/room2/temp
+46720542143024,Received, mavg/room2/rhum
+46720542146564,Sending, func/room2/ahum , {1.6196020153842975e+18 15.654037212546436}
+46721543130980,Received, mavg/room2/rhum
+46721543150481,Received, mavg/room1/rhum
+46721543285692,Received, mavg/room1/temp
+46721543344421,Received, mavg/room2/temp
+46721543348526,Sending, func/room1/ahum , {1.6196020163842975e+18 18.968146901905396}
+46721543602495,Sending, func/room2/ahum , {1.6196020163842975e+18 17.301704318557995}
+46722541501804,Received, mavg/room1/temp
+46722541947084,Received, mavg/room1/rhum
+46722542022712,Sending, func/room1/ahum , {1.6196020173842975e+18 16.967950698692455}
+46722542815796,Received, mavg/room2/temp
+46722543308710,Received, mavg/room2/rhum
+46722543380153,Sending, func/room2/ahum , {1.6196020173842975e+18 17.897609246689022}
+46723541846157,Received, mavg/room2/temp
+46723541877415,Received, mavg/room1/temp
+46723541880190,Received, mavg/room2/rhum
+46723541882871,Sending, func/room2/ahum , {1.6196020183842975e+18 16.95636181537598}
+46723541899043,Received, mavg/room1/rhum
+46723541992590,Sending, func/room1/ahum , {1.6196020183842975e+18 13.077067995062473}
+46724542433191,Received, mavg/room1/temp
+46724542700547,Received, mavg/room1/rhum
+46724542787252,Sending, func/room1/ahum , {1.6196020193842975e+18 10.042537444056864}
+46724542851365,Received, mavg/room2/temp
+46724543239547,Received, mavg/room2/rhum
+46724543322540,Sending, func/room2/ahum , {1.6196020193842975e+18 14.158298155858915}
+46725543422269,Received, mavg/room2/rhum
+46725543442207,Received, mavg/room1/rhum
+46725543446336,Received, mavg/room2/temp
+46725543450253,Sending, func/room2/ahum , {1.6196020203842975e+18 11.677987275118783}
+46725543467618,Received, mavg/room1/temp
+46725543574330,Sending, func/room1/ahum , {1.6196020203842975e+18 9.085881279571574}
+46726541914793,Received, mavg/room2/temp
+46726541928814,Received, mavg/room1/rhum
+46726542198015,Received, mavg/room1/temp
+46726542203445,Received, mavg/room2/rhum
+46726542269508,Sending, func/room2/ahum , {1.6196020213842975e+18 10.061607274732864}
+46726542275688,Sending, func/room1/ahum , {1.6196020213842975e+18 9.986416786305}
+46727541629749,Received, mavg/room2/temp
+46727541679885,Received, mavg/room2/rhum
+46727541696835,Sending, func/room2/ahum , {1.6196020223842975e+18 10.010974839059168}
+46727541911121,Received, mavg/room1/temp
+46727541917710,Received, mavg/room1/rhum
+46727541920387,Sending, func/room1/ahum , {1.6196020223842975e+18 11.233800384942516}
+46728543830108,Received, mavg/room2/rhum
+46728544055171,Received, mavg/room1/rhum
+46728544060051,Received, mavg/room2/temp
+46728544063601,Sending, func/room2/ahum , {1.6196020233842975e+18 10.387093530762204}
+46728544072855,Received, mavg/room1/temp
+46728544141146,Sending, func/room1/ahum , {1.6196020233842975e+18 12.940685100100486}
+46729541751682,Received, mavg/room2/rhum
+46729589239392,Received, mavg/room2/temp
+46729589253442,Received, mavg/room1/temp
+46729589256376,Sending, func/room2/ahum , {1.6196020243842975e+18 11.482793232053208}
+46729589416366,Received, mavg/room1/rhum
+46729589420607,Sending, func/room1/ahum , {1.6196020243842975e+18 14.206148368755578}
+46730541558110,Received, mavg/room1/rhum
+46730542204796,Received, mavg/room2/temp
+46730542519441,Received, mavg/room1/temp
+46730542524035,Sending, func/room1/ahum , {1.6196020253842975e+18 15.905765362394632}
+46730543156422,Received, mavg/room2/rhum
+46730543275425,Sending, func/room2/ahum , {1.6196020253842975e+18 12.561232527223945}
+46731543771942,Received, mavg/room2/rhum
+46731543791981,Received, mavg/room1/rhum
+46731543795920,Received, mavg/room2/temp
+46731543809981,Sending, func/room2/ahum , {1.6196020263842975e+18 14.211703862415462}
+46731543988324,Received, mavg/room1/temp
+46731543993899,Sending, func/room1/ahum , {1.6196020263842975e+18 16.948247537868756}
+46732541829304,Received, mavg/room1/rhum
+46732541842426,Received, mavg/room2/rhum
+46732542024189,Received, mavg/room1/temp
+46732542290645,Sending, func/room1/ahum , {1.6196020273842975e+18 18.469251231752896}
+46732542298147,Received, mavg/room2/temp
+46732542300843,Sending, func/room2/ahum , {1.6196020273842975e+18 15.654037212546436}
+46733542235423,Received, mavg/room1/rhum
+46733542257115,Received, mavg/room2/temp
+46733542259403,Received, mavg/room2/rhum
+46733542261725,Sending, func/room2/ahum , {1.6196020283842975e+18 17.301704318557995}
+46733542264399,Received, mavg/room1/temp
+46733542266808,Sending, func/room1/ahum , {1.6196020283842975e+18 18.968146901905396}
+46734541777055,Received, mavg/room1/temp
+46734542205880,Received, mavg/room2/temp
+46734542210560,Received, mavg/room1/rhum
+46734542213020,Sending, func/room1/ahum , {1.6196020293842975e+18 16.967950698692455}
+46734542225213,Received, mavg/room2/rhum
+46734542227669,Sending, func/room2/ahum , {1.6196020293842975e+18 17.897609246689022}
+46735541912029,Received, mavg/room1/temp
+46735541927195,Received, mavg/room2/rhum
+46735541935102,Received, mavg/room2/temp
+46735541937575,Sending, func/room2/ahum , {1.6196020303842975e+18 16.95636181537598}
+46735542150416,Received, mavg/room1/rhum
+46735542187942,Sending, func/room1/ahum , {1.6196020303842975e+18 13.077067995062473}
+46736542676388,Received, mavg/room2/rhum
+46736543126098,Received, mavg/room1/rhum
+46736543294938,Received, mavg/room1/temp
+46736543372904,Sending, func/room1/ahum , {1.6196020313842975e+18 10.042537444056864}
+46736543380601,Received, mavg/room2/temp
+46736543646720,Sending, func/room2/ahum , {1.6196020313842975e+18 14.158298155858915}
+46737542518710,Received, mavg/room2/temp
+46737542536910,Received, m

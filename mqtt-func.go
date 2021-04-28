@@ -55,7 +55,7 @@ func publish (topic string, channel chan Sample) {
         
         
         message, _ := json.Marshal(sample)
-        fmt.Println("Sending,", topic)
+        fmt.Println("Sending,", topic, ",",sample)
         //t1 := get_time()
         client.Publish(topic, 1, false, message)
         //sentTimeLogger.Println(topic,"Time : ",t1/1000000000,"s Value : ",sample.Value)

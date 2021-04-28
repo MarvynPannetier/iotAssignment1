@@ -24,14 +24,15 @@ var (
     dispatch_mux sync.Mutex
     client mqtt.Client
     t0 float64 = 0.0
-    receivedTempTimeLogger *log.Logger  //marvyn
-    receivedHumTimeLogger *log.Logger  //marvyn
-    sentTimeLogger *log.Logger  //marvyn
-    differenceTimeLogger *log.Logger  //marvyn
-)
+    
+    // create log variables 
+    receivedTempTimeLogger *log.Logger  
+    receivedHumTimeLogger *log.Logger  
+    sentTimeLogger *log.Logger  
+    differenceTimeLogger *log.Logger  
+    )
 
-
-
+// This function will create the log file and define a formatting of each beginning of line depending on the var log used
 //***************************************************************************************
 func init() {
     file, err := os.OpenFile("logs_func.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
@@ -43,7 +44,7 @@ func init() {
     sentTimeLogger = log.New(file,"sent : ", log.Ldate|log.Ltime|log.Lshortfile)
     differenceTimeLogger = log.New(file,"difference : ",log.Ldate|log.Ltime|log.Lshortfile)
 }
-//****************************Marvyn*****************************************************
+//***************************************************************************************
 
 func get_time () float64 {
     return float64(time.Now().UnixNano())
@@ -55,10 +56,12 @@ func publish (topic string, channel chan Sample) {
         message, _ := json.Marshal(sample)
         t1 := get_time()
         client.Publish(topic, 1, false, message)
+        // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
         sentTimeLogger.Println(topic,"Time : ",t1/1000000000,"s Value : ",sample.Value)
         //fmt.Println("sent : ",topic,sample.Value) //add by marvyn
         t2:=t1-t0
         if t2 > 0.0 {
+        // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
         differenceTimeLogger.Println(topic,"Time : ",t2/1000,"us")
         }
     }
@@ -79,8 +82,10 @@ func ahum (channel_temp chan Sample,
     for {
       t0=get_time()
         temp_sample := <- channel_temp
+        // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
         receivedTempTimeLogger.Println(topic_temp, "Time : ",t0/1000000000,"s value : ",temp_sample.Value)
         rhum_sample := <- channel_rhum
+        // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
         receivedHumTimeLogger.Println(topic_rhum, "Time : ",t0/1000000000,"s value : ",rhum_sample.Value)
         
         temp := temp_sample.Value
@@ -98,7 +103,7 @@ func dispatch_sample (client mqtt.Client, message mqtt.Message) {
     var channel_temp chan Sample
     var channel_rhum chan Sample
     var channel_ahum chan Sample
-     fmt.Println("received : ",topic) //add by marvyn
+     fmt.Println("received : ",topic) 
     // preprocess topic
     tparts := strings.Split(topic, "/")
     modality := tparts[len(tparts)-1]
@@ -138,7 +143,7 @@ func dispatch_sample (client mqtt.Client, message mqtt.Message) {
         // start up consumers
          
         //room:=topic[:len(topic)-5] //add by marvyn
-        go ahum(channel_temp, channel_rhum, channel_ahum, topic_temp, topic_rhum)//add by marvyn
+        go ahum(channel_temp, channel_rhum, channel_ahum, topic_temp, topic_rhum)
         go publish(topic_ahum, channel_ahum)
         
         // register channels

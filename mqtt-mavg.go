@@ -22,15 +22,18 @@ var (
     dispatch_mux sync.Mutex
     t0 float64 = 0.0
     client mqtt.Client
-    receivedTimeLogger *log.Logger  //marvyn
-    sentTimeLogger *log.Logger  //marvyn
-    differenceTimeLogger *log.Logger  //marvyn
-)
+    
+    // create log variables 
+    receivedTimeLogger *log.Logger  
+    sentTimeLogger *log.Logger  
+    differenceTimeLogger *log.Logger 
+    ) 
 
 const (
     WINDOW_SIZE float64 = 3.0
 )
 
+// This function will create the log file and define a formatting of each beginning of line depending on the var log used
 //***************************************************************************************
 func init() {
     file, err := os.OpenFile("logs_mavg.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
@@ -41,7 +44,7 @@ func init() {
     sentTimeLogger = log.New(file,"sent : ", log.Ldate|log.Ltime|log.Lshortfile)
     differenceTimeLogger = log.New(file,"difference : ",log.Ldate|log.Ltime|log.Lshortfile)
 }
-//****************************Marvyn*****************************************************
+//***************************************************************************************
 
 
 func get_time () float64 {
@@ -71,7 +74,8 @@ func mavg (topic string, channel chan Sample) {
         
         //Marvyn : I chose to put it here because it is the moment we "received" the sample
    	t0=get_time()
-   	receivedTimeLogger.Println(otopic, "Time : ",t0/1000000000, "s value : ",value) //marvyn
+   	 // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
+   	receivedTimeLogger.Println(otopic, "Time : ",t0/1000000000, "s value : ",value) 
         received = true
         // update window and sum
         sum += value - window[int(i)%int(WINDOW_SIZE)]
@@ -82,11 +86,13 @@ func mavg (topic string, channel chan Sample) {
         message, _ := json.Marshal(new_sample)
               
         t2 := get_time()
+         // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
         sentTimeLogger.Println(otopic, "Time : ",t2/1000000000, "s value : ", value)
   	sent = true
-        //Marvyn : t1 is the time between the moment we received the sample and the moment we send the average
+        // t1 is the time between the moment we received the sample and the moment we send the average
         t1 := (t2-t0)
         if received && sent && t1 > 0.0 {
+         // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
         differenceTimeLogger.Println(otopic, "Time : ",t1/1000,"us")
         }   
         // publish

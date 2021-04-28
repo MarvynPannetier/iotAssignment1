@@ -27,13 +27,13 @@ const (
 )
 
 var (
-    globalTimeLogger *log.Logger //marvyn
+    globalTimeLogger *log.Logger // create a log var
     brokers []string = []string{"tcp://127.0.0.1:1883"}
     t0 float64 = 0.0
     t1 float64 = 0.0
 )
 
-
+// This function will create the log file and define a formatting of each beginning of line
 //***************************************************************************************
 func init() {
     file, err := os.OpenFile("logs_siggen.txt", os.O_APPEND|os.O_CREATE|os.O_WRONLY, 0666)
@@ -44,7 +44,7 @@ func init() {
     globalTimeLogger = log.New(file, "globalTime: ", log.Ldate|log.Ltime|log.Lshortfile)
     
 }
-//****************************Marvyn*****************************************************
+//**************************************************************************************
 
 
 func mqtt_connect () mqtt.Client {
@@ -117,8 +117,8 @@ func produce (client mqtt.Client, signal Signal, t0 float64) {
             t2 = get_time()
             fmt.Println(signal.Topic, ":" , tnext, sample.Value )
             
-            
-            globalTimeLogger.Println(signal.Topic, "Time : ",(t2-t0)/1000000000,"s Value : ", sample.Value ) //marvyn
+            // with this line we will print a line on the log file with the information between parentheses in addition to those define in the init function.
+            globalTimeLogger.Println(signal.Topic, "Time : ",(t2-t0)/1000000000,"s Value : ", sample.Value ) 
           
             
         }
